@@ -1,12 +1,7 @@
-# ADVANCE NODE JS TOPICS
+#                        ADVANCE NODE JS TOPICS
+
+
 ## Day1
-## Day2
-## Day3
-## Day4
-## Day5
-## Day6
-
-
 ```
 Day1:
         1. Global objects, processes and buffers
@@ -14,6 +9,7 @@ Day1:
         3. Json and C++ Addons
         4. Wrapping and cashing modules 
 ```
+## Day2
 ```
 Day2:
         1. Event loops
@@ -21,6 +17,7 @@ Day2:
         3. Working of callbacks
         4. setImmediate and process.nextTick 
 ```
+## Day3
 ```
 Day3:
     NODE FOR EVENT DRIVEN ARCHITECTURE
@@ -31,6 +28,7 @@ Day3:
         1. creating multiple sockets
         2. improving the chat server
 ```
+## Day4
 ```
 Day4:
     NODE FOR WEB
@@ -39,6 +37,7 @@ Day4:
         3.  File system - Node’s file sytem APIs, reading and writing files
         4. working with console and  utilities -
 ```
+## Day5
 ```
 Day5:
     STREAMS
@@ -46,7 +45,7 @@ Day5:
         2.  Piping()
         3. Streaming APIs 
 ```
-
+## Day6
 ```
 Day6:
     CLUSTERS & CHILD PROCESS

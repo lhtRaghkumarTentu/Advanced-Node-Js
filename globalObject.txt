@@ -1,0 +1,67 @@
+Global Object:
+    <<<<<<<<<<  global.object >>>>>>>>>>>
+    The One and only True global Object in node is called Global.
+When we declare a top level variables in node Like if we declare 
+variable in utils file Then the variable is local to the utils file.
+we can't access it from other files even after requiring the util js
+file.
+    However When We Define variable on the global Object. now we can 
+access This Variable on Other files by importing That Utils File.
+
+
+
+Global Process Object:
+    <<<<<<<<<<  global.process >>>>>>>>>>>    
+    Process Object provides a bridge b/w Node Application its Running
+Environment. it Has Many Usefull Properties.
+Example1: 
+        process.versions: 
+            To read versions of the Current Node and its dependencies.
+        We can use these version numbers to determine if we should run
+        some custom code. may be For an older version of v8.
+        Example: 
+            if(process.versions.v8 < '4'){
+                // do something
+            }
+Example2:
+    process.env
+    Another most usefull property in process is env Property. The env 
+    property exposesa copy of the userenvironment Which is list of st
+    rings you get with the SET command in Windows.
+    Now We can Do like this Below.
+    """
+        module.exports = {
+            port: process.env.PORT || 8080
+         }
+    """
+        const config = require('./utils');
+        console.log(config.port);
+    """
+Example3:
+    process.release.lts
+    another property is release.lts This will have the LTS label of the
+    used Node Release. if you Use lts node.
+    """
+        > global.process.release.lts
+        'Gallium'
+    """
+    
+    Process Object is an instance of an EventEmittor. This Means we can 
+    emit events from process and we can listen to certain events on the
+    process.
+    examples:
+        process.on('exit', (code) => { 
+            // Do one final synchronus operation
+            // before the node process terminates
+        })
+        process.on('uncoughtException', (err) => {
+            // something went unhandled
+            // do any cleanup and exit  anyway!
+        })
+
+
+Global buffer Object:
+    Buffer is one of the global object which is used heavily in Node to work
+with binary streams of data.A buffer is essentially a chunk of memory allocated
+outside of the v8 heap and we can put some data in that memory and that data can
+be interpreted in in one of many ways depending on the length of a character. 
